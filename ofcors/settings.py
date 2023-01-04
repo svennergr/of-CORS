@@ -200,6 +200,8 @@ AUTH_TICKET_VALID_WINDOW_S = int(
     os.getenv("AUTH_TICKET_VALID_WINDOW_S", 60 * 5)
 )  # 5 minutes
 
+SESSION_ENGINE = 'django.contrib.sessions.backends.cached_db'
+
 # Amass Integration
 
 AMASS_LINUX_I386_DIR = "linux_i386"
